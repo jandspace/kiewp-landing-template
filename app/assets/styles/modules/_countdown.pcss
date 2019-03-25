@@ -1,0 +1,70 @@
+.countdown {
+  width: 100%;
+  margin: 20px 0 10px 0;
+
+  .timer-body-block {
+    text-align: center;
+  }
+  .table-cell {
+    display: inline-block;
+    width: 58px;
+    text-align: center;
+    color: white;
+
+    @mixin atMedium {
+      width: 58px;
+
+    }
+
+    @mixin atLarge {
+      width: 70px;
+
+    }
+
+  }
+  .tab-val {
+    font-size: 34px;
+    margin: 4px;
+    padding: 10px 5px;
+    background-image:url("../../assets/images/counter-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+
+    @mixin atMedium {
+      font-size: 28px;
+    }
+
+    @mixin atLarge {
+      font-size: 42px;
+    }
+
+  }
+
+
+  .day {
+    font-size: 46px;
+  }
+
+  .tab-metr {
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: white;
+    text-shadow: 1px 1px 9px rgba(150, 150, 150, 0.45);
+
+
+
+  }
+
+
+}
+
+.countdown-dark {
+  .tab-metr {
+
+    color: $darkGray;
+
+
+  }
+}

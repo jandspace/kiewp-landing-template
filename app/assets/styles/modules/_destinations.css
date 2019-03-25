@@ -1,0 +1,101 @@
+
+
+.destinations {
+  width: 100%;
+  background-color:white;
+  min-height: 350px;
+  padding-bottom:40px;
+
+  &__content {
+    padding-top: 20px;
+    @mixin clearfix;
+
+  }
+
+
+  &__content-box {
+    position: relative;
+    lost-center: 100%;
+    width: 100%;
+    background: #f6f6f6;
+    padding: 20px ;
+    margin: 10px 0;
+    float: left;
+    //border: 1px solid #8080804d;
+    @mixin clearfix;
+
+    /*&::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      bottom: 10px;
+      border-bottom: 1px solid #f0f0f0;
+
+    }*/
+
+    &:last-child {
+      &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        bottom: 10px;
+        border-bottom: none;
+
+      }
+    }
+
+  }
+
+  &__content-text {
+    lost-column: 1/1 no-flex;
+
+    @mixin atMedium {
+      lost-column: 4/6 no-flex;
+
+    }
+
+    h4 {
+      margin-top: 0;
+      margin-bottom: 5px;
+      text-transform: uppercase;
+    }
+
+    p {
+      font-size: 15px;
+    }
+  }
+
+  &__content-img {
+    lost-column: 1/1 no-flex;
+    margin-bottom: 10px;
+
+    @mixin atMedium {
+      lost-column: 2/6 no-flex;
+      margin-bottom: 0px;
+
+    }
+    &--img-1 {
+      background: url('../../assets/images/courses/midtail-course-intensive.jpg') bottom center no-repeat;
+      background-size: cover;
+    }
+    img {
+      border: 1px solid #8080804d;
+      display: block;
+      width: 100%;
+      height: auto;
+
+    }
+  }
+
+
+
+
+  .arrow_down {
+    &:after {
+      border-top-color: white;
+
+    }
+    }
+  }
+
+

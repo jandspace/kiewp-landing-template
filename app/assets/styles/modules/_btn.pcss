@@ -1,0 +1,146 @@
+.btn {
+  max-width: 240px;
+  display: block;
+  padding: 10px 10px;
+  margin: 10px auto 10px auto;
+  text-decoration: none !important;
+  border: 2px solid #414980;
+  transition: all .3s ease-out;
+  cursor: pointer;
+
+  &--mtop {
+      margin-top: 25px;
+    }
+
+  &--fl {
+    float: left;
+  }
+
+  &--small {
+    padding: 10px 15px;
+
+  }
+
+
+  span {
+    font-size: 14px;
+    display: block;
+    color: #414980;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: normal;
+  }
+
+  &:hover {
+    background-color: $mainBlue;
+    border: 2px solid $mainBlue;
+    span {
+      color: white;
+    }
+
+  }
+
+  @mixin atMedium {
+    padding: 15px 20px;
+
+  }
+
+  &--pink {
+    background-color: $pink;
+    border: 2px solid $pink;
+    span {
+      color: white;
+    }
+
+
+
+
+
+  }
+
+  &--primary {
+    background-color: $lightBlue;
+    border: 2px solid $lightBlue;
+    span {
+      color: white;
+    }
+  }
+
+  &--cta {
+    background-color: $mainBlue;
+    border: 2px solid $mainBlue;
+    span {
+      color: white;
+    }
+    &:hover {
+      background-color: $lightBlue;
+      border: 2px solid $lightBlue;
+      span {
+        color: white;
+      }
+
+    }
+
+  }
+
+
+  &--secondary {
+    background-color: $pink;
+    border: 2px solid $pink;
+    span {
+      color: white;
+    }
+  }
+
+  &--gray {
+    background-color: #F6F6F6;
+    border: 1px solid rgba(32, 32, 32, 0.2);
+    span {
+      color: #202020;
+    }
+    &:hover {
+      background-color: $lightBlue;
+      border: 1px solid $lightBlue;
+      span {
+        color: white;
+      }
+
+    }
+
+
+  }
+
+
+}
+.btn-more {
+  display: inline-block;
+  padding: 5px 10px;
+  text-decoration: none !important;
+  border: 1px solid rgba(204, 204, 204, 0.55);
+  transition: all .3s ease-out;
+  cursor: pointer;
+  color: $lightGray;
+
+  &--mtop {
+    margin: 10px 0;
+  }
+
+
+  span {
+    font-size: 12px;
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &:hover {
+    background-color: $lightBlue;
+    border: 1px solid white;
+    span {
+      color: white;
+    }
+
+  }
+
+
+}

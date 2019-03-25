@@ -1,0 +1,55 @@
+.arrow_down {
+  position: relative;
+  background: #f0f0f0;
+  display: block;
+  top: 40px;
+  text-decoration: none;
+  cursor: pointer;
+  z-index: 1;
+
+  span {
+    display: block;
+    position: absolute;
+    left: 50%;
+    margin-left: -9px;
+    top: 0;
+    z-index: 2;
+
+  }
+
+  &::before {
+    top: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+
+  }
+
+  &::after {
+    top: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+
+  }
+
+  &::after {
+    border-top-color: #f0f0f0;
+    border-width: 20px;
+    margin-left: -20px;
+  }
+
+  &::before {
+    border-width: 26px;
+    margin-left: -26px;
+  }
+
+}

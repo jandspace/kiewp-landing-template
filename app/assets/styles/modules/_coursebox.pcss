@@ -1,0 +1,148 @@
+.course-box {
+  width: 100%;
+  padding-top: 30px;
+  @mixin clearfix;
+
+  ul {
+    margin: 0;
+    padding: 10px 0;
+    list-style: none;
+    text-align: center;
+
+
+    li {
+      position: relative;
+      display: inline-block;
+      width: 100%;
+      padding:5px;
+
+      cursor: pointer;
+      margin: 0;
+      max-width: 480px;
+
+
+      @mixin atMedium {
+        width: 33%;
+
+      }
+      @mixin atLarge {
+        width: 33%;
+
+      }
+
+      .course-box__title {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+
+        width: 100%;
+        padding: 10px;
+        text-transform: uppercase;
+
+        transition: .3s ease-out;
+        z-index: 10;
+
+
+
+        div {
+          font-size: 14px;
+          color: white;
+          height: auto;
+          background-color: rgba(45, 69, 102, 0.9);
+          padding: 15px 10px;
+
+
+        }
+      }
+
+
+      img {
+        width: 100%;
+        transition: .3s ease-out;
+        display: block;
+        margin: 0;
+        padding: 4px;
+      }
+      &:hover {
+        .course-box__title div {
+          background-color: rgba(45, 69, 102, 1);
+        }
+      }
+    }
+  }
+
+  &__description {
+
+    display: none;
+    text-align: left;
+    width: 100%;
+    float: left;
+    transition: opacity 1s ease-out;
+    padding: 0 5px;
+    margin-top: 10px;
+    &__inner {
+      padding: 10px 20px;
+      margin-bottom:10px;
+      background-color: rgba(23, 50, 86, 0.9);
+
+
+      h4 {
+        text-transform: uppercase;
+        font-size: 20px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        color: white;
+      }
+
+      p {
+        color: white;
+        font-size: 16px;
+      }
+
+    }
+  }
+
+  &__content {
+    border: 1px solid rgba(119, 122, 125, 0.1);
+
+  }
+
+
+  .down-arrow {
+    position: relative;
+    transition: all .03ms ease-out;
+    &:after {
+
+
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      content: "";
+      display: block;
+      width: 0;
+      height: 0;
+      margin-left:-10px;
+      z-index: 99;
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-top: 10px solid rgb(45, 69, 102);
+
+
+    }
+  }
+  .down-arrow--color {
+    &:after {
+
+      border-top: 15px solid rgb(45, 69, 102)
+
+    }
+
+  }
+}
+
+.active {
+  background-color: rgb(45, 69, 102) !important;
+}
+
+
+

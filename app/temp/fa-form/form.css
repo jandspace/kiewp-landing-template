@@ -1,0 +1,190 @@
+
+.form {
+  min-height: 500px;
+  background-color: #152643;
+  padding-bottom: 30px;
+}
+
+
+.wFormContainer {
+}
+
+
+.wFormTitle {
+  display: none;
+}
+
+
+.wForm {
+  padding-top: 40px;
+  float: left;
+}
+
+
+.wFormContainer input[type="text"]:focus, .wFormContainer textarea:focus, .wFormContainer select:focus {
+  outline: none !important;
+  border: none !important;
+  background: white;
+  color: black;
+
+  -webkit-transition: background-color 500ms linear;
+  transition: background-color 500ms linear;
+
+}
+
+
+.wFormContainer textarea{
+  resize:none !important;
+  height: 90px !important;
+}
+
+
+.wFormContainer {
+  border: none ;
+  background: none ;
+}
+
+
+.wFormContainer label {
+  font-size: 14px !important;
+  color:white !important;
+  padding: 2px 4px;
+  text-transform: uppercase;
+}
+
+
+.inputWrapper, .inputWrapper div {
+  width: 100% !important;
+}
+
+
+.wFormContainer input[type="text"],  .wFormContainer textarea, .wFormContainer select {
+  font-size: 14px !important;
+  color: white ;
+  width: 100% !important;
+  background: #363E51;
+  padding: 5px 10px;
+  height: 45px;
+  border: none !important;
+  font-weight: lighter;
+  border-radius: 5px;
+}
+
+
+.wFormContainer select {
+  border: 0 !important;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 0.01px;
+  text-overflow: "";
+}
+
+
+.wFormContainer select option {
+  background-color: white;
+}
+
+
+.wFormContainer .oneField {
+  width: 48%;
+  height: 90px;
+  float: left;
+  border: none!important;
+  margin-left: 1%;
+  margin-right: 1%;
+
+}
+
+
+.wForm div > div.oneField, .wForm fieldset > div.oneField, .wForm form > div.oneField, .wForm fieldset, .wForm .matrixLayout, .wForm .gridLayout, .wForm h4, .wForm .wfPagingButtons, .wForm .actions {
+  margin-top:0 !important;
+}
+
+
+.wForm .inputWrapper .delimiterBefore {
+  color: white;
+}
+
+
+.wFormContainer input[type=submit] {
+  letter-spacing: -1px;
+  font-size: 16px !important;
+  float: right;
+
+  display: block;
+  padding: 20px 60px;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  border-radius: 5px;
+  margin-right: 11px;
+  background-color: #00A5D9;
+  text-decoration: none;
+
+  cursor: pointer;
+  outline: none !important;
+  border: none !important;
+
+
+
+
+  -webkit-transition: background-color 200ms linear;
+  transition: background-color 200ms linear;
+
+}
+
+
+.wFormContainer input[type=submit]:hover {
+  background-color: #006d93;
+  color: white;
+
+}
+
+
+.wForm .primaryAction {
+  background-image: none !important;
+}
+
+
+.lengthIndicator {
+  display: none !important;
+}
+
+
+.wFormContainer .errMsg {
+  color: #CC3333;
+  right: 0;
+  position: absolute;
+}
+
+
+.oneField {
+  position: relative;
+}
+
+
+#tfa_7-D {
+  width: 98%;
+  min-height: 142px;
+}
+
+
+.supportInfo {
+  display: none;
+}
+
+
+@media only screen and (max-width: 990px) {
+
+  .wFormContainer .oneField {
+    width: 98%;
+  }
+
+  .wFormContainer input[type=submit] {
+    float: none;
+    margin: auto;
+
+
+  }
+
+}

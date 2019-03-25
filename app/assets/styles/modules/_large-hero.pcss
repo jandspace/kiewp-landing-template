@@ -1,0 +1,251 @@
+.large-hero {
+  position: relative;
+  height: auto;
+  height: 360px;
+
+
+  @mixin atMedium {
+    height: 560px;
+    width: 100%;
+    float: left;
+
+  }
+
+
+  &--bg-1 {
+
+    position: relative;
+    background:url("../../assets/images/large-hero-img.jpg") no-repeat /*rtl:url("../../assets/images/hero-img-small-1-ar.jpg") no-repeat fixed*/;
+    background-size: cover;
+    background-position: 50% 60px;
+
+
+    @mixin atMedium {
+      background:url("../../assets/images/large-hero-img.jpg")  no-repeat /*rtl:url("../../assets/images/hero-img-1-ar.jpg") no-repeat fixed*/;
+      background-size: cover;
+      background-position: 50% 60px;
+
+    }
+
+    @mixin atRetina {
+      background:url("../../assets/images/large-hero-img@2x.jpg")  no-repeat /*rtl:url("../../assets/images/hero-img-1-ar@2x.jpg") no-repeat fixed*/;
+      background-size: cover;
+      background-position: 50% 60px;
+
+    }
+
+
+  }
+
+
+
+  &__text-content {
+    padding: 20px;
+    text-align: center;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    min-width: 390px;
+
+    @mixin atMedium {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      text-align: left;
+      min-width: 990px;
+
+    }
+
+  }
+
+
+  &__p {
+    display: inline-block;
+    color: $darkGray;
+    font-size: 1.2rem;
+    border-bottom: 1px solid rgba(32,32,32,0.65);
+
+    @mixin atSmaller {
+      font-size: 1rem;
+
+    }
+    @mixin atMedium {
+      font-size: 1.75rem;
+    }
+
+    &--white {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.65);
+
+      color: $darkGray;
+      text-shadow: none;
+
+      @mixin atMedium {
+        color: white;
+        text-shadow: 1px 1px 9px rgba(150, 150, 150, 0.45);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.65);
+
+      }
+
+    }
+
+
+    &--white-2 {
+      color: white;
+      text-shadow: 1px 1px 9px rgba(150, 150, 150, 0.45);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.65);
+
+
+    }
+
+
+
+
+  }
+
+  &__h1 {
+    display: block;
+    color: $darkGray;
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 100%;
+    margin: 0;
+    padding: 0;
+    text-align:center;
+
+    &--white {
+      color: white;
+      text-shadow: none;
+
+      @mixin atMedium {
+        color: white;
+        text-shadow: 1px 1px 9px rgba(150, 150, 150, 0.45);
+      }
+    }
+
+    &--white-2 {
+      color: white;
+      text-shadow: 1px 1px 9px rgba(150, 150, 150, 0.45);
+
+    }
+
+
+    @mixin atSmaller {
+      font-size: 2rem;
+    }
+
+    @mixin atMedium {
+      font-size: 72px;
+    }
+
+    @mixin atLarge {
+      font-size: 78px;
+    }
+
+  }
+
+  &__h2 {
+    display: block;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+
+    text-align:center;
+
+
+    &--white {
+      color: white;
+      text-shadow: none;
+
+      @mixin atMedium {
+        color: white;
+        text-shadow: 1px 1px 9px rgba(150, 150, 150, 0.45);
+      }
+    }
+
+    &--white-2 {
+      color: white;
+      text-shadow: 1px 1px 9px rgba(150, 150, 150, 0.45);
+
+    }
+
+
+    @mixin atSmaller {
+      font-size: 1rem;
+    }
+
+    @mixin atMedium {
+      font-size: 1.5rem;
+    }
+
+  }
+
+
+  &__ribbon {
+    position: absolute;
+    display: block;
+    background-color:$mainBlue;
+    padding: 10px 30px;
+    color:white;
+    text-decoration: none;
+    text-align: center;
+
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -20px;
+    z-index:10;
+    min-width: 90%;
+
+
+    @mixin atMedium {
+      min-width: 50%;
+
+    }
+
+    &:hover {
+      background-color: $mainBlue;
+      span {
+        color: white;
+      }
+    }
+
+    span {
+      color:white;
+      font-size: 13px;
+      text-transform: uppercase;
+
+      @mixin atMedium {
+        font-size: 18px;
+
+      }
+    }
+
+    &--blue {
+      background-color:$mainBlue;
+
+    }
+    &--light-blue {
+      background-color:$lightBlue;
+
+    }
+    &--pink {
+      background-color:$pink;
+
+    }
+
+
+
+  }
+
+
+}
+
+
+:lang(es) .className {
+//font-size: 26px;
+}
+

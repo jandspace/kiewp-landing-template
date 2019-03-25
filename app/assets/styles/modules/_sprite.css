@@ -1,0 +1,96 @@
+/* Do not edit modules/_sprite directly as it is generated automatically by Gulp.
+Instead edit gulp/templates/sprite */
+
+.icon {
+  background-image: url('../../assets/images/sprites/sprite-551ce7e5.svg')/*rtl:ignore*/;
+}
+
+.no-svg .icon {
+  background-image: url('../../assets/images/sprites/sprite-551ce7e5.png')/*rtl:ignore*/;
+
+}
+
+
+.icon--booking {
+  width: 17px;
+  height: 17px;
+  background-position: 56.88622754491018% 86%/*rtl:ignore*/;
+}
+
+.icon--calendar {
+  width: 78px;
+  height: 85px;
+  background-position: 0 100%/*rtl:ignore*/;
+}
+
+.icon--check {
+  width: 16px;
+  height: 14px;
+  background-position: 66.66666666666667% 83.49514563106796%/*rtl:ignore*/;
+}
+
+.icon--check-dark {
+  width: 17px;
+  height: 18px;
+  background-position: 98.20359281437126% 32.323232323232325%/*rtl:ignore*/;
+}
+
+.icon--date {
+  width: 17px;
+  height: 16px;
+  background-position: 59.880239520958085% 63.366336633663366%/*rtl:ignore*/;
+}
+
+.icon--down-arrow {
+  width: 17px;
+  height: 11px;
+  background-position: 70.05988023952096% 60.37735849056604%/*rtl:ignore*/;
+}
+
+.icon--kaplan-logo {
+  width: 184px;
+  height: 32px;
+  background-position: 0 0/*rtl:ignore*/;
+}
+
+.icon--left-arrow {
+  width: 32px;
+  height: 32px;
+  background-position: 51.31578947368421% 37.64705882352941%/*rtl:ignore*/;
+}
+
+.icon--loc {
+  width: 11px;
+  height: 14px;
+  background-position: 73.98843930635839% 83.49514563106796%/*rtl:ignore*/;
+}
+
+.icon--location {
+  width: 17px;
+  height: 17px;
+  background-position: 46.706586826347305% 86%/*rtl:ignore*/;
+}
+
+.icon--mail {
+  width: 22px;
+  height: 22px;
+  background-position: 48.148148148148145% 67.36842105263158%/*rtl:ignore*/;
+}
+
+.icon--phone {
+  width: 22px;
+  height: 22px;
+  background-position: 87.65432098765432% 33.68421052631579%/*rtl:ignore*/;
+}
+
+.icon--right-arrow {
+  width: 32px;
+  height: 32px;
+  background-position: 72.36842105263158% 37.64705882352941%/*rtl:ignore*/;
+}
+
+.icon--time {
+  width: 14px;
+  height: 14px;
+  background-position: 81.76470588235294% 83.49514563106796%/*rtl:ignore*/;
+}
